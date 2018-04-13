@@ -1,1 +1,4 @@
 /.ipynb_checkpoints/
+*.csv
+*.zip
+*.6B
