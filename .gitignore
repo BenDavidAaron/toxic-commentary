@@ -2,4 +2,4 @@
 *.csv
 *.zip
 *.6B
-*models/*
+*.h5
