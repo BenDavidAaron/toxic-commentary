@@ -1,7 +1,3 @@
-# toxic-commentary
-Repository for a Toxic Comment identification [Kaggle competition](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge).
+This is a collection of models and exploration I did to develop a classifier for toxic internet comments. 
 
-After the contest closed, I chose to take the datasets and apply them to a web-app for toxic comment detection. 
-I plan to use the webapp as a demo to show off, and I'll link to it here in due time.
-
-So far I have explored different models, then I'll drop in the model later. 
+If you want to clone this and copy my work, you'll need to download the [kaggle dataset](https://www.kaggle.com/c/jigsaw-toxic-comment-classification-challenge/data) and the [GloVe Embeddings](http://nlp.stanford.edu/data/glove.6B.zip) and save them in this directory under thier default filenames (`train.csv`, `test.csv`, `sample_submission.csv`, and `glove.6B` and all it's contents).
