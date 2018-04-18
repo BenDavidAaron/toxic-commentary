@@ -3,17 +3,48 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Skeleton application demoing Heroku and Flask integration.">
+    <meta name="description" content="Web App demoing a neural net to detect toxic language.">
     <meta name="author" content="@bendavidaaron">
     <!-- <link rel="icon" href="favicon.ico"> -->
 
     <title>Do you sound like a Jerk?</title>
 
-    <!-- Bootstrap core CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel=stylesheet type=text/css href='{{ url_for('static', filename='style.css')}}'>
   </head>
   <body>
-    Hello World, this is where some stuff goes
+    <h1>
+      Internet Jerk Detector
+    </h1>
+    <p>
+      This is a simple webapp hosting a Neural Network based model to classify user-supplied comments as toxic or not. The neural net was designed and trained using the <a href="https://keras.io/"">Keras library</a> on top of Tensorflow. To improve predictions, and save training time, I also used Stanford's <a href="https://github.com/stanfordnlp/GloVe">GloVe word embeddings</a> trained on Wikipedia. The final model, while simplistic in it's architecture, has an out of sample accuracy of around 96% which is impressive for a toy project.
+    </p>
+    <h3>
+      Go ahead and try to fool it!
+    </h3>
+    <p>If you can beat the model, let me know (<a href="https://twitter.com/BenDavidAaron">@BenDavidAaron</a>).</p>
+    <p>If you think you can do better, start with <a href="https://github.com/BenDavidAaron/toxic-commentary">my source code</a>.</p>
+    <table>
+      <tr>
+        <td>
+          Enter your comment here:
+        </td>
+        <td>
+          Check your metrics here:
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <textarea name="comment" rows=20 cols="75">
+Lorem ipsum dolor sit amet, pro tale epicurei signiferumque an, an eam melius detracto fabellas. No dicunt tamquam efficiendi nec. Pri atqui corrumpit scribentur ad, quo ad aeterno suscipit lucilius, at duo nusquam civibus. Nostro vivendo ea mei, mel te dolore consequuntur, mel eu sumo ludus. Vis eu alia graece possit, quo ei omnium interesset. Ut postea impedit vix.
+
+Probo feugiat suscipiantur in pro, ex soleat oporteat has. Unum ferri aperiam no vix, veniam possit eam cu. Quo rebum voluptua deserunt ut. Ius modo affert te, in his nullam eligendi, et duis semper est. Ut mutat nonumes per, sea menandri pertinacia honestatis id. Sea in augue tritani senserit, dico sonet labore cum ea, virtute menandri adversarium sed eu.
+          </textarea>
+        </td>
+        <td>
+          Flash the results here
+        </td>
+      </tr>
+    </table>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
