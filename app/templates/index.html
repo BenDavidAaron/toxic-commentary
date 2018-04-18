@@ -23,28 +23,29 @@
     </h3>
     <p>If you can beat the model, let me know (<a href="https://twitter.com/BenDavidAaron">@BenDavidAaron</a>).</p>
     <p>If you think you can do better, start with <a href="https://github.com/BenDavidAaron/toxic-commentary">my source code</a>.</p>
-    <table>
-      <tr>
-        <td>
-          Enter your comment here:
-        </td>
-        <td>
-          Check your metrics here:
-        </td>
-      </tr>
-      <tr>
-        <td>
-          <textarea name="comment" rows=20 cols="75">
-Lorem ipsum dolor sit amet, pro tale epicurei signiferumque an, an eam melius detracto fabellas. No dicunt tamquam efficiendi nec. Pri atqui corrumpit scribentur ad, quo ad aeterno suscipit lucilius, at duo nusquam civibus. Nostro vivendo ea mei, mel te dolore consequuntur, mel eu sumo ludus. Vis eu alia graece possit, quo ei omnium interesset. Ut postea impedit vix.
-
-Probo feugiat suscipiantur in pro, ex soleat oporteat has. Unum ferri aperiam no vix, veniam possit eam cu. Quo rebum voluptua deserunt ut. Ius modo affert te, in his nullam eligendi, et duis semper est. Ut mutat nonumes per, sea menandri pertinacia honestatis id. Sea in augue tritani senserit, dico sonet labore cum ea, virtute menandri adversarium sed eu.
-          </textarea>
-        </td>
-        <td>
-          Flash the results here
-        </td>
-      </tr>
-    </table>
+    <form id="comment" method="post">
+      <table>
+        <tr>
+          <td>
+            <h4>Enter your comment here:</h4>
+            <input type="submit" value="Submit">
+          </td>
+          <td>
+            <h4>How toxic is it?</h4>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <textarea name="comment" rows=20 cols="75">
+{{comment}}
+            </textarea>
+          </td>
+          <td>
+            <h1>{{score}}</h1>
+          </td>
+        </tr>
+      </table>
+    </form>
     <!-- Bootstrap core JavaScript
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
