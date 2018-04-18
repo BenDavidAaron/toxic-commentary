@@ -2,5 +2,4 @@
 *.csv
 *.zip
 *.6B
-*.h5
 *__pycache__*
